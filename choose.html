@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050505" />
+    <title>無罩駕駛｜Choose</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="choose-page" data-page="choose">
+    <main class="choose-screen">
+      <header class="choose-header">
+        <a class="mini-brand" href="start.html" aria-label="返回首頁"
+          >無罩駕駛</a
+        >
+        <p class="header-note">CHOOSE YOUR STYLE</p>
+      </header>
+
+      <section class="carousel-section" aria-label="鼻型選單">
+        <div class="carousel-heading">
+          <p class="eyebrow">FIND YOUR OWN STYLE</p>
+          <h1>選擇你的造型</h1>
+          <p class="carousel-subtitle">左右滑動，看看不同的鼻型設計</p>
+        </div>
+
+        <div class="carousel" id="noseCarousel">
+          <button
+            class="carousel-arrow previous"
+            type="button"
+            aria-label="上一個選項"
+          >
+            &#10094;
+          </button>
+          <div class="carousel-window">
+            <div class="carousel-track" id="carouselTrack">
+              <article
+                class="nose-slide"
+                data-name="自然原型"
+                data-description="保留自然輪廓，呈現最原本的自己。"
+              >
+                <div class="nose-art nose-art-natural">
+                  <svg
+                    viewBox="0 0 240 300"
+                    role="img"
+                    aria-label="自然鼻型示意圖"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="noseSkinA"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="0.9"
+                      >
+                        <stop offset="0" stop-color="#f0c9b3" />
+                        <stop offset=".38" stop-color="#c99f8d" />
+                        <stop offset=".72" stop-color="#e5bba6" />
+                        <stop offset="1" stop-color="#9e786d" />
+                      </linearGradient>
+                      <linearGradient
+                        id="noseShadeA"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="0"
+                      >
+                        <stop
+                          offset="0"
+                          stop-color="#8f685f"
+                          stop-opacity=".05"
+                        />
+                        <stop
+                          offset=".52"
+                          stop-color="#fff0e3"
+                          stop-opacity=".7"
+                        />
+                        <stop
+                          offset="1"
+                          stop-color="#79564e"
+                          stop-opacity=".45"
+                        />
+                      </linearGradient>
+                      <filter
+                        id="noseShadowA"
+                        x="-40%"
+                        y="-20%"
+                        width="180%"
+                        height="160%"
+                      >
+                        <feGaussianBlur stdDeviation="8" />
+                      </filter>
+                    </defs>
+                    <ellipse
+                      cx="122"
+                      cy="273"
+                      rx="54"
+                      ry="10"
+                      fill="#000"
+                      opacity=".55"
+                      filter="url(#noseShadowA)"
+                    />
+                    <path
+                      d="M91 22 C89 65 83 112 78 157 C73 194 56 218 69 246 C79 268 99 277 121 278 C145 280 166 268 174 246 C185 218 166 193 161 157 C155 112 151 65 149 22 C137 12 103 12 91 22Z"
+                      fill="url(#noseSkinA)"
+                    />
+                    <path
+                      d="M102 25 C101 92 93 150 91 184 C89 221 96 248 111 265 C96 261 79 252 73 235 C64 211 81 183 85 151 C91 103 91 57 92 22Z"
+                      fill="#8d675e"
+                      opacity=".3"
+                    />
+                    <path
+                      d="M112 24 C117 85 116 153 118 204 C119 234 119 256 125 273 C143 269 160 259 168 241 C177 218 160 188 155 151 C149 105 146 62 146 22Z"
+                      fill="url(#noseShadeA)"
+                      opacity=".8"
+                    />
+                    <path
+                      d="M71 239 C87 252 103 254 120 253 C139 254 157 251 174 238 C171 266 149 280 122 281 C95 280 76 266 71 239Z"
+                      fill="#a97d70"
+                      opacity=".55"
+                    />
+                    <ellipse
+                      cx="91"
+                      cy="250"
+                      rx="12"
+                      ry="6"
+                      fill="#805c55"
+                      opacity=".35"
+                    />
+                    <ellipse
+                      cx="153"
+                      cy="250"
+                      rx="12"
+                      ry="6"
+                      fill="#805c55"
+                      opacity=".35"
+                    />
+                  </svg>
+                </div>
+                <h2>自然原型</h2>
+                <p>保留自然輪廓，呈現最原本的自己。</p>
+              </article>
+
+              <article
+                class="nose-slide"
+                data-name="星點妝飾"
+                data-description="以螢光色點綴，讓細節成為視覺焦點。"
+              >
+                <div class="nose-art nose-art-dots">
+                  <svg
+                    viewBox="0 0 240 300"
+                    role="img"
+                    aria-label="星點妝飾鼻型示意圖"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="noseSkinB"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="1"
+                      >
+                        <stop offset="0" stop-color="#f3c5b3" />
+                        <stop offset=".45" stop-color="#d29c8f" />
+                        <stop offset="1" stop-color="#a97872" />
+                      </linearGradient>
+                      <filter
+                        id="noseGlowB"
+                        x="-100%"
+                        y="-100%"
+                        width="300%"
+                        height="300%"
+                      >
+                        <feGaussianBlur stdDeviation="5" />
+                      </filter>
+                    </defs>
+                    <ellipse
+                      cx="120"
+                      cy="270"
+                      rx="42"
+                      ry="9"
+                      fill="#000"
+                      opacity=".5"
+                    />
+                    <path
+                      d="M97 36 C96 81 88 124 85 166 C82 198 66 219 75 244 C82 265 100 273 121 274 C143 274 161 264 168 243 C176 218 158 197 155 165 C151 123 145 80 143 36 C132 26 108 26 97 36Z"
+                      fill="url(#noseSkinB)"
+                    />
+                    <path
+                      d="M111 38 C111 97 106 157 107 198 C107 229 111 250 121 270 C139 265 156 254 162 237 C169 215 153 190 150 159 C145 114 140 71 140 34Z"
+                      fill="#ffe0cf"
+                      opacity=".25"
+                    />
+                    <path
+                      d="M78 239 C93 252 106 255 121 254 C137 255 153 250 167 237 C165 260 146 275 121 276 C97 275 82 261 78 239Z"
+                      fill="#95665f"
+                      opacity=".45"
+                    />
+                    <g fill="#c7ff00">
+                      <circle cx="113" cy="91" r="4" />
+                      <circle cx="137" cy="119" r="3.4" />
+                      <circle cx="101" cy="145" r="3" />
+                      <circle cx="144" cy="164" r="4" />
+                      <circle cx="120" cy="188" r="3.6" />
+                      <circle cx="96" cy="211" r="3.2" />
+                      <circle cx="139" cy="228" r="3.4" />
+                    </g>
+                    <g fill="#c7ff00" opacity=".35" filter="url(#noseGlowB)">
+                      <circle cx="113" cy="91" r="8" />
+                      <circle cx="137" cy="119" r="7" />
+                      <circle cx="101" cy="145" r="7" />
+                      <circle cx="144" cy="164" r="8" />
+                      <circle cx="120" cy="188" r="8" />
+                      <circle cx="96" cy="211" r="7" />
+                      <circle cx="139" cy="228" r="7" />
+                    </g>
+                    <g fill="#ed718c">
+                      <circle cx="128" cy="73" r="3" />
+                      <circle cx="87" cy="178" r="3" />
+                      <circle cx="151" cy="202" r="3" />
+                    </g>
+                  </svg>
+                </div>
+                <h2>星點妝飾</h2>
+                <p>以螢光色點綴，讓細節成為視覺焦點。</p>
+              </article>
+
+              <article
+                class="nose-slide"
+                data-name="霓虹未來"
+                data-description="加入未來感光點，打造更鮮明的個人風格。"
+              >
+                <div class="nose-art nose-art-neon">
+                  <svg
+                    viewBox="0 0 240 300"
+                    role="img"
+                    aria-label="霓虹未來鼻型示意圖"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="noseSkinC"
+                        x1="0"
+                        y1="0"
+                        x2="1"
+                        y2="1"
+                      >
+                        <stop offset="0" stop-color="#e9c1af" />
+                        <stop offset=".5" stop-color="#b98c80" />
+                        <stop offset="1" stop-color="#785f61" />
+                      </linearGradient>
+                      <filter
+                        id="noseGlowC"
+                        x="-100%"
+                        y="-100%"
+                        width="300%"
+                        height="300%"
+                      >
+                        <feGaussianBlur stdDeviation="7" />
+                      </filter>
+                    </defs>
+                    <ellipse
+                      cx="120"
+                      cy="272"
+                      rx="48"
+                      ry="10"
+                      fill="#000"
+                      opacity=".6"
+                    />
+                    <path
+                      d="M94 30 C93 73 88 118 82 162 C77 197 61 218 73 245 C81 264 100 275 121 275 C145 276 162 264 170 243 C180 216 161 195 157 161 C152 117 146 74 145 30 C131 19 108 20 94 30Z"
+                      fill="url(#noseSkinC)"
+                    />
+                    <path
+                      d="M104 31 C108 91 105 153 108 197 C110 231 114 252 122 271"
+                      fill="none"
+                      stroke="#f6ddcf"
+                      stroke-width="7"
+                      opacity=".32"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M74 240 C91 253 104 256 121 255 C140 256 156 251 170 238 C166 264 147 277 121 277 C97 277 79 264 74 240Z"
+                      fill="#85605a"
+                      opacity=".5"
+                    />
+                    <path
+                      d="M84 131 L157 131 M79 171 L161 171 M78 211 L164 211"
+                      stroke="#c7ff00"
+                      stroke-width="2"
+                      opacity=".7"
+                    />
+                    <g fill="#c7ff00">
+                      <circle cx="84" cy="131" r="4" />
+                      <circle cx="157" cy="131" r="4" />
+                      <circle cx="79" cy="171" r="4" />
+                      <circle cx="161" cy="171" r="4" />
+                      <circle cx="78" cy="211" r="4" />
+                      <circle cx="164" cy="211" r="4" />
+                    </g>
+                    <g fill="#c7ff00" opacity=".35" filter="url(#noseGlowC)">
+                      <circle cx="84" cy="131" r="10" />
+                      <circle cx="157" cy="131" r="10" />
+                      <circle cx="79" cy="171" r="10" />
+                      <circle cx="161" cy="171" r="10" />
+                      <circle cx="78" cy="211" r="10" />
+                      <circle cx="164" cy="211" r="10" />
+                    </g>
+                  </svg>
+                </div>
+                <h2>霓虹未來</h2>
+                <p>加入未來感光點，打造更鮮明的個人風格。</p>
+              </article>
+            </div>
+          </div>
+          <button
+            class="carousel-arrow next"
+            type="button"
+            aria-label="下一個選項"
+          >
+            &#10095;
+          </button>
+        </div>
+
+        <div class="carousel-controls">
+          <div
+            class="carousel-dots"
+            id="carouselDots"
+            aria-label="選項頁碼"
+          ></div>
+          <p class="slide-count" id="slideCount">01 / 03</p>
+        </div>
+
+        <div class="selection-footer">
+          <div class="selection-copy" aria-live="polite">
+            <span class="selection-label">CURRENT SELECTION</span>
+            <strong id="selectedName">自然原型</strong>
+          </div>
+          <button
+            class="glow-button select-button"
+            id="selectButton"
+            type="button"
+          >
+            選擇此造型
+          </button>
+        </div>
+        <p class="selection-message" id="selectionMessage" role="status"></p>
+      </section>
+      <footer class="choose-footer">
+        <a href="start.html">← 返回首頁</a><span>NO MASK · NO LIMITS</span>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
