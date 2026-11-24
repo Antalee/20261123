@@ -1,19 +1,20 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#050505" />
-    <title>無罩駕駛｜Loading</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
-  <body class="loading-page" data-page="loading">
-    <main class="loading-screen" aria-label="載入中">
-      <p class="loading-label" id="loadingText">
-        <span class="cursor">|</span>
-      </p>
-      <p class="loading-hint" id="loadingHint">正在進入體驗……</p>
-    </main>
-    <script src="script.js"></script>
+  <body>
+    <div id="map" style="width: 100%; height: 100vh"></div>
+
+    <!-- 加上 async，並把 callback=initStreetView 加回網址結尾 -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrmEPyrLYMaApE8WJjZc9Ec7mi0ftE8Sk&callback=initStreetView"
+    ></script>
+    <!--key=AIzaSyCrmEPyrLYMaApE8WJjZc9Ec7mi0ftE8Sk金鑰替換-->
+    <!--&callback=initStreetView不要刪除-->
+    <script src="./js/goolgmap.js"></script>
   </body>
 </html>
