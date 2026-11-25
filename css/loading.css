@@ -1,4 +1,53 @@
-.loading_h1 {
+/* 讓全站所有元素（包含按鈕與表單）都統一使用 Noto Serif TC */
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Noto Serif TC", "Noto Serif", serif;
+}
+
+/* 如果你之前有在個別區塊寫死 font-family: monospace; 並想直接全部覆蓋，可以用這行： */
+* {
+  font-family: "Noto Serif TC", "Noto Serif", serif !important;
+}
+.bg-stage {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  z-index: 1;
+  user-select: none;
+}
+.begin {
   color: #bcff00;
-  background-color: #000;
+  position: fixed;
+  inset: 0; /* 撐滿整個螢幕四邊 (top/right/bottom/left: 0) */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平置中 */
+  justify-content: center; /* 垂直置中 */
+  text-align: center; /* 多行文字時內部也置中 */
+  background: #000000;
+  color: #bcff00;
+  font-family: monospace;
+  z-index: 50;
+}
+.begin {
+  @keyframes dotBounce {
+    0%,
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 0.35;
+    }
+    30% {
+      transform: translateY(-8px);
+      opacity: 1;
+    }
+  }
 }
